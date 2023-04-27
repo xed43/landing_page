@@ -7,15 +7,18 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: url("assets/bg2.jpg") center center / cover;
+  background: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")
+    center center / cover;
   color: white;
   font-size: 1.5rem;
   text-align: center;
 }
 
 .logo {
-  color: white;
-  font-size: 3rem;
+  width: 25vw;
+  max-width: 250px;
+  height: 50px;
+  border-radius: 0;
 }
 
 img {
@@ -32,8 +35,9 @@ img {
 }
 
 .learn-more {
-  width: 120px;
-  height: 40px;
+  width: 180px;
+  height: 50px;
+
   border-radius: 50px;
   border: none;
   outline: 0.5px solid grey;
@@ -46,16 +50,17 @@ a {
 
 button:hover {
   transition: 0.3s ease-in-out;
-
+  background: black;
+  color: white;
   border: none;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
   align-items: center;
-  height: 10vh;
+  height: fit-content;
+  padding: 20px 50px;
 }
 
 section {
@@ -68,37 +73,48 @@ section {
 .cta {
   display: flex;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
   color: white;
+  height: 88vh;
 }
 
 .cta > h1 {
-  padding: 4rem;
-  font-size: 4rem;
+  font-size: 13vw;
 }
 
 .cta > button {
   width: 250px;
-  height: 50px;
-  border-radius: 100px;
+  height: 70px;
+  margin-top: 2rem;
+
   border: none;
-  outline: 0.5px solid grey;
+  outline: 2.5px solid midnightblue;
 }
 
 .features {
-  margin-top: -160px;
+  background: url("https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHZlY3RvciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60")
+    center center / cover;
   display: grid;
-  background: rgb(13, 1, 29);
+  gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  text-align: center;
-  opacity: 0.8;
-  height: 100vh;
+  font-size: 1.3rem;
+  padding: 2rem 4rem;
+  height: 110vh;
 }
 
 .features-info {
-  height: 200px;
+  background: rgb(241, 241, 241);
+  color: black;
+  opacity: 0.7;
+  height: 30vh;
   width: 100%;
-  padding: 50px;
-  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .info {
@@ -111,8 +127,8 @@ section {
   align-items: center;
   padding: 50px;
   font-size: 30px;
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
@@ -127,9 +143,11 @@ section {
 }
 
 footer {
-  width: 100%;
-  height: 10vh;
+  width: 100vw;
+  height: fit-content;
+  padding-bottom: 3rem;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   background: rgb(0, 0, 0);
